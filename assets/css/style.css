@@ -1,0 +1,64 @@
+body, html {
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Roboto Mono', monospace;
+}
+
+#background {
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	position: absolute;
+}
+
+.content {
+	padding: 10px;
+}
+
+/* header */
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
+
+/* characters */
+
+.character {
+	border: 2px solid green;
+	width: 200px;
+	height: 150px;
+	float: left;
+	background-color: white;
+	text-align: center;
+}
+
+.section {
+	clear: both;
+	font-size: 1.5em;
+}
+
+.charImage {
+	width: 170px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.MainCharLoc {
+	height: 170px;
+}
+
+.Enemies {
+	background-color: red;
+}
+
+.Defender {
+	background-color: black;
+	color: white;
+}
+
+.info {
+	clear: both;
+	color: white;
+	font-size: 1em;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/game.js" defer></script>
+</head>
+<body>
+	<img id="background" src="assets/images/x-wing.jpeg">
+	<div class="content">
+		<header>
+			<h1>Star Wars RPG!</h1>
+		</header>
+		<main>
+			<div class="Selection">
+				<div class="select character">
+					<p class="name">Obi-Wan Kenobi</p>
+					<img class="charImage" src="assets/images/obi.jpg">
+					<p class="hp">120</p>
+				</div>
+				<div class="select character">
+					<p class="name">Luke Skywalker</p>
+					<img class="charImage" src="assets/images/luke.jpg">
+					<p class="hp">100</p>
+				</div>
+				<div class="select character">
+					<p class="name">Darth Sidious</p>
+					<img class="charImage" src="assets/images/darth.jpg">
+					<p class="hp">150</p>
+				</div>
+				<div class="select character">
+					<p class="name">Darth Maul</p>
+					<img class="charImage" src="assets/images/maul.jpeg">
+					<p class="hp">180</p>
+				</div>
+			</div>
+			<div>
+				<h2 class="section">Your Character</h2>
+				<div class="MainCharLoc">
+				</div>
+			</div>
+			<div>
+				<h2 class="section">Enemies Available to Attack</h2>
+				<div class="EnemiesLoc">
+				</div>
+			</div>
+			<div>
+				<h2 class="section">Fight Selection</h2>
+				<button type="button" class="button">Attack!</button>
+			</div>
+			<div>
+				<h2 class="section">Defender</h2>
+				<div class="DefenderLoc">
+				</div>
+			</div>
+			<div class="info"></div>
+			<!-- you can make the display into into a function -->
+		</main>
+	</div>
+</body>
+</html>
+
+<!-- use var $clone = $("#myElement").clone(true,true); to clone the element and its children -->
