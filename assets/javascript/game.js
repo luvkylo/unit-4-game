@@ -123,6 +123,7 @@ $(document).ready(function () {
 			if (mainHp <= 0) {
 				// change mainHp
 				$(".MainChar > .hp").text(mainHp);
+            $(".button").remove();
 
 				// print in class "info": "You have been defeated...GAME OVER!!!"
 				$(".info").text("You have been defeated...GAME OVER!!!");
@@ -158,13 +159,13 @@ $(document).ready(function () {
 				$(".MainChar > .hp").text(mainHp);
 				$(".Defender > .hp").text(defenderHp);
 
-   				// run the display function
-   				$(".info").html("<p>You attacked " + defenderName + " for " + mainDamage + " damage.<br>" + 
-   					defenderName + " attacked you back for " + defenderDamage + " damage.<p>");
+				// run the display function
+				$(".info").html("<p>You attacked " + defenderName + " for " + mainDamage + " damage.<br>" + 
+					defenderName + " attacked you back for " + defenderDamage + " damage.<p>");
 			}	
 
 			mainDamage += baseAttack;		
-		}
+		   }
    		// else
    		else if (!win) {
    			// display "no enemy here"
@@ -176,16 +177,17 @@ $(document).ready(function () {
    	$(document).on("click", ".restart", function() {
    		// reset all variables
    		mainDamage = 0;
-		first = true;
-		defenderDamage = 0;
-		baseAttack = 0;
-		orgMainHp = 0;
-		defender = false;
-		isset = false;
-		win = false;
-		$(".character").remove();
-		$(".Selection").append(allChar);
-		$(".info").text("");
-		$(this).remove();
+   		first = true;
+   		defenderDamage = 0;
+   		baseAttack = 0;
+   		orgMainHp = 0;
+   		defender = false;
+   		isset = false;
+   		win = false;
+   		$(".character").remove();
+   		$(".Selection").append(allChar);
+   		$(".info").text("");
+   		$(this).remove();
+         $(".fight").append("<button type='button' class='button'>Attack!</button>");
    	});
 });
